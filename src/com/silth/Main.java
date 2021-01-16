@@ -1,16 +1,12 @@
 package com.silth;
 
-import com.silth.type.Type;
+import com.silth.vehicle.Car;
+import com.silth.vehicle.Motorcycle;
 
 public class Main {
-    private static Type type = Type.MOTORCYCLE;
+
     public static void main(String[] args) {
-	    if(type.equals(Type.VEHICLE)){
-	        Vehicle vehicle = new Vehicle("White","2021", 4,2000);
-	        vehicle.car();
-        }else{
-            Vehicle vehicle = new Vehicle("Brown","2021", 1,250);
-            vehicle.motorcycle();
-        }
+        Car car = new Car("White", "2021", 4, 2000);
+        Motorcycle motorcycle = new Motorcycle("Brown", "2020", 250);
     }
 }
